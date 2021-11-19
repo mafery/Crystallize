@@ -1,0 +1,24 @@
+
+
+.self-card {
+    font-size: 16px;
+
+    .self-card-title {
+        background-color: #fafafa;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        width: 100%;
+        border: 1px solid #f0f0f0;
+        border-bottom: none;
+        font-weight: 500;
+        
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+    }
+}
+

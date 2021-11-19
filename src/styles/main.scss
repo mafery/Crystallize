@@ -1,0 +1,30 @@
+.system-logo {
+    float: left;
+    width: 200px;
+    height: 31px;
+    line-height: 31px;
+    margin: 16px 24px 16px 0;
+    background-color: '#001529';
+    font-size: 24px;
+    color: #fff;
+}
+
+.site-layout {
+    padding: 0 12px 12px 12px;
+    margin-top: 64px ;
+    background-color: #f1f1f1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.site-content {
+    margin-top: 12px;
+    padding: 12px;
+    // height: calc(100% - 43px);
+    height: 100%;
+}
+.bg-white {
+    background-color: #fff;
+}
