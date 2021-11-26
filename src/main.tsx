@@ -20,7 +20,7 @@ ReactDOM.render(
     // </React.StrictMode>,
     <HashRouter>
         <Switch>
-            <Route path={pRoutes.index} exact render={() => (<Redirect to="/main/ods"></Redirect>)} ></Route>
+            <Route path={pRoutes.index} exact render={() => (<Redirect to={pRoutes.main}></Redirect>)} ></Route>
             <Route path={pRoutes.login} exact component={LoginApp} ></Route>
             <Route path={pRoutes.main} >
                 <MainApp menuList={mainRoutes}>

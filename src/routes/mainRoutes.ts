@@ -4,14 +4,20 @@ import { ImportOutlined, FileImageOutlined } from '@ant-design/icons';
 
 import ExcelImportLyt from '../layouts/ExcelImportLyt';
 import CropPictureLyt from '../layouts/CropPictureLyt';
+import MainIndexLyt from '../layouts/MainIndexLyt'
 
 export function getMainRoutes(pUrl: string): IRouteProps[] {
     const routes: IRouteProps[] = [
         {
+            path: `${pUrl}/ `,
+            name: '图片裁剪',
+            title: '图片裁剪',
+            component: MainIndexLyt
+        },
+        {
             path: `${pUrl}/tool`,
             name: '工具箱',
             title: '工具箱',
-            component: ExcelImportLyt,
             children: [
                 {
                     path: `${pUrl}/tool/excel`,
@@ -21,19 +27,13 @@ export function getMainRoutes(pUrl: string): IRouteProps[] {
                     icon: ImportOutlined
                 },
                 {
-                    path: `${pUrl}/crop`,
+                    path: `${pUrl}/tool/crop`,
                     name: '图片裁剪',
                     title: '图片裁剪',
                     component: CropPictureLyt,
                     icon: FileImageOutlined
                 }
             ]
-        },
-        {
-            path: `${pUrl}/ `,
-            name: '图片裁剪',
-            title: '图片裁剪',
-            component: CropPictureLyt
         }
     ]
     return routes;

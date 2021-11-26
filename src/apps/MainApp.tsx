@@ -39,7 +39,7 @@ function MainApp(props: IProps) {
     return (
         <Layout>
             <Sider 
-                style={{ overflow: 'auto', height: '100vh',  position: 'fixed', left: 0, }} 
+                style={{ overflow: 'auto', height: '100vh' }} 
                 collapsed={collapsed} collapsible 
                 onCollapse={() => setCollapsed(!collapsed)} 
             >
@@ -50,7 +50,13 @@ function MainApp(props: IProps) {
                     <SubMenu key="sub1" icon={<UserOutlined />} title="User">
                         <Menu.Item key="3">Tom</Menu.Item>
                         <Menu.Item key="4">Bill</Menu.Item>
-                        <Menu.Item key="5">Alex</Menu.Item>
+                        <SubMenu key="sub1-1" icon={<UserOutlined />} title="User">
+                                <Menu.Item key="31">Tom</Menu.Item>
+                                <Menu.Item key="41">Bill</Menu.Item>
+                                <Menu.Item key="51">
+                                Bill 2
+                                </Menu.Item>
+                            </SubMenu>
                     </SubMenu>
                     <SubMenu key="sub2" icon={<TeamOutlined />} title="Team">
                         <Menu.Item key="6">Team 1</Menu.Item>
@@ -59,7 +65,7 @@ function MainApp(props: IProps) {
                     <Menu.Item key="9" icon={<FileOutlined />}> Files </Menu.Item>
                 </Menu>
             </Sider>
-            <Layout className="site-layout" style={{marginLeft: 200}} >
+            <Layout className="site-layout" style={{ height: '100vh' }}  >
                 <Header className="bg-white" style={{ padding: 0 }} >
                     <Row>
                         <Col span="12">
@@ -69,22 +75,86 @@ function MainApp(props: IProps) {
                                 <Breadcrumb.Item>App</Breadcrumb.Item>
                             </Breadcrumb>
                         </Col>
-                        <Col span="12" style={{ display: 'flex', flexDirection: 'row-reverse', }}>
+                        <Col span="12" style={{ display: 'flex', flexDirection: 'row-reverse', alignSelf: 'center' }}>
                             <Dropdown overlay={menu}>
-                                <Avatar src="https://joeschmoe.io/api/v1/random" 
-                                    style={{ marginRight: 20, marginTop: 16, cursor: 'pointer' }} />
+                                <Avatar size={36} icon={<UserOutlined />}
+                                    style={{ cursor: 'pointer', marginRight: 20 }} />
                             </Dropdown>
-                            
                         </Col>
                     </Row>
-                    
                 </Header>
-                <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
-                    <div className="site-layout-background" style={{ padding: 24, textAlign: 'center' }}>
+                <Content style={{ margin: '24px 16px 0', overflow: 'auto' }}>
+                    <div className="bg-white" style={{ padding: 24 }}>
                         ...
                         <br />
                         long
                         ...
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
+                        <br />
+                        content
                         <br />
                         content
                     </div>
