@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
 
 import { Layout } from 'antd';
-import Dragger, { DraggerProps } from 'antd/lib/upload/Dragger';
 const { Content } = Layout;
 
-function MainIndexLyt(props: any) {
-    
+function DashboardLyt(props: any) {
     return (
         <Content>
-            MainIndexLyt
+            DashboardLyt
         </Content>
     )
 }
 
-export default MainIndexLyt;
+export default DashboardLyt;

@@ -11,9 +11,6 @@ import LoginApp from './apps/LoginApp';
 import NotFoundApp from './apps/NotFoundApp';
 
 import { pRoutes } from './routes';
-// 导入 main 页面的路由
-import { getMainRoutes } from './routes/mainRoutes';
-const mainRoutes = getMainRoutes(pRoutes.main);
 
 ReactDOM.render(
     // <React.StrictMode> // react 严格模式
@@ -22,11 +19,7 @@ ReactDOM.render(
         <Switch>
             <Route path={pRoutes.index} exact render={() => (<Redirect to={pRoutes.main}></Redirect>)} ></Route>
             <Route path={pRoutes.login} exact component={LoginApp} ></Route>
-            <Route path={pRoutes.main} >
-                <MainApp menuList={mainRoutes}>
-                    { mainRoutes.map((o, i) => (<Route key={i} path={o.path} component={o.component} />)) }
-                </MainApp>
-            </Route>
+            <Route path={pRoutes.main} component={() => <MainApp pMenu={pRoutes.main} />} ></Route>
             <Route path={pRoutes.notFound} component={NotFoundApp} />
         </Switch>
     </HashRouter>,

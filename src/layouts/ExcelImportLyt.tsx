@@ -21,7 +21,7 @@ function ExcelImportLyt(props: any) {
     }
     return (
         <Content>
-            <div style={{ width: 800, height: 400, position: "absolute", marginLeft: '50%', left: -400 }}>
+            <div style={{ width: 800, height: 400 }}>
                 <Dragger {...uploadProps}>
                     <p className="ant-upload-drag-icon">
                         <InboxOutlined />
